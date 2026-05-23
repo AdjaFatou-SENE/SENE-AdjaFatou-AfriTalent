@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-bg-color: rgb(228, 211, 179);
+    --main-h3-color: rgb(133, 100, 12);
+    --main-h4-color: rgb(209, 11, 11);
+    --main-section-margin-top: 4em;
+    --main-section-height: 100%;
+    --body-a-color: rgb(228, 125, 28);
+    --main-titre-fm:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --main-p-fm: 'Times New Roman', Times, serif;
+    --footer-bg-color: black;
+
+
+   
+}
+
+p svg{
+    color: rgb(236, 184, 41);
+}
+
+
+body{
+    margin: 0;
+    background-color: var(--main-bg-color);
+    padding-top: 1px;
+   
+}
+
+body h1,h2,h3,h4,h5{
+    font-family: var(--main-titre-fm);
+}
+
+body p{
+    font-family: var(--main-p-fm);
+    font-size: 18px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    padding: 0;
+    margin-top: 0;
+    z-index: 7;
+
+}
+.logo{
+    width: 9vw;
+}
+
+section{
+    /* margin-top: var(--main-section-margin-top); */
+    height: var(--main-section-height);
+}
+body a{
+    color: var(--body-a-color);
+
+}
+body h3{
+    color: var(--main-h3-color);
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+body h4{
+    color: var(--main-h4-color);
+}
+
+.woo{
+    margin-top: 200px;
+}
+
+.dd{
+    margin-top: 200px;
+}
+
+#carouselExampleAutoplaying{
+    /* height: 10em; */
+    width: 30vw;
+    margin-left: 30em;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 5em;
+}
+span, h2{
+    font-size: 25px;
+}
+
+.ban{
+    background-color: rgb(228, 125, 28) ;
+    height: 22vh;
+    font-size: 20px;
+}
+.ban h5{
+    font-size: 29px;
+}
+
+.btn{
+    background-color:  rgb(209, 11, 11);
+    color: black;
+    font-size: 23px;
+   
+}
+
+footer{
+    background-color: var(--footer-bg-color);
+    color: aliceblue;
+   
+
+}
+
+.disp{
+    display: flex;
+    gap: 155px;
+    margin-bottom: 2em;
+}
+
+#free{
+    width: 20vh;
+    margin-top: 200px;
+    margin-bottom: 60px;
+    margin-left: 38em;
+}
+
+.img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.tata{
+    margin-top: 200px;
+}
+
+.dop{
+    margin-top: 100px;
+    display: flex;
+    gap: 150px;
+    width: 100%;
+    font-size: 15px;
+}
+.iop input,select,textarea{
+    width: 40vw;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+footer h5{
+    text-decoration: underline;
+
+}
+.oui{
+    width: 60vw;
+}
+
+.card2{
+   height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    padding: 3px;
+}
+
+.ouba{
+    display: flex;
+    gap: 50px;
+    margin-top: 3em;
+}
+.dora{
+    display: flex;
+    gap: 50px;
+    margin-left: 350px;
+   
+}
+
+.dflex{
+    display: flex;
+    gap: 40px;
+    
+}
