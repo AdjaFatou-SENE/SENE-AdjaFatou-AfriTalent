@@ -55,14 +55,23 @@ section{
     /* margin-top: var(--main-section-margin-top); */
     height: var(--main-section-height);
 }
+
+.aa{
+    color: black;
+}
 body a{
     color: var(--body-a-color);
 
 }
 body h3{
     color: var(--main-h3-color);
-    margin-bottom: 1em;
-    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-top: 5em;
+    
+}
+.cs:hover{
+    transform: translateY(10px);
+    box-shadow: 0 10px 20px rgb(87, 83, 83);
 }
 
 body h4{
@@ -71,6 +80,8 @@ body h4{
 
 .woo{
     margin-top: 200px;
+    padding: 30px;
+    margin-left: 40px;
 }
 
 .dd{
@@ -86,17 +97,30 @@ body h4{
     padding: 4px;
     margin-bottom: 5em;
 }
+
+.carousel img{
+    width: 5vw;
+    margin-left: 170px;
+    border: 2px solid  rgb(228, 125, 28) ;
+    border-radius: 30px;
+}
 span, h2{
     font-size: 25px;
 }
 
 .ban{
     background-color: rgb(228, 125, 28) ;
-    height: 22vh;
-    font-size: 20px;
+    height: 40vh;
+   
 }
 .ban h5{
     font-size: 29px;
+    margin-left: 400px;
+}
+.ban p{
+    margin-left: 470px;
+    margin-top: 1em;
+    font-size: 20px;
 }
 
 .btn{
@@ -104,6 +128,11 @@ span, h2{
     color: black;
     font-size: 23px;
    
+   
+}
+.bta{
+    margin-left: 570px;
+    margin-top: 4em;
 }
 
 footer{
@@ -150,9 +179,8 @@ footer{
     border-radius: 10px;
 }
 
-footer h5{
-    text-decoration: underline;
-
+.oa div,p,a{
+    text-decoration: none;
 }
 .oui{
     width: 60vw;
@@ -182,4 +210,47 @@ footer h5{
     display: flex;
     gap: 40px;
     
+}
+.imgn{
+    margin-left: 250px;
+}
+
+.you{
+    font-family: var(--main-p-fm);
+    font-size: 30px;
+    color: rgb(41, 42, 43);
+    margin-left: 410px;
+    margin-right: 410px;
+
+}
+.yum{
+    margin-left: 400px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 70px;
+    width: 900px;
+    border-radius: 60px;
+    padding: 20px;
+    margin: 0;
+    align-items: start;
+    margin-left: 200px;
+}
+.grid1{
+    height: 45vh;
+}
+.grid2{
+    height: 55vh;
+}
+.grid3{
+    height: 60vh;
+}
+.grid p{
+    font-size: 20px;
+    line-height: 2;
+}
+.grid4{
+    height: 40vh;
 }
