@@ -21,13 +21,35 @@ p svg{
     color: rgb(236, 184, 41);
 }
 
+@media screen and(max-width: 375px){
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 10px;
+    }
+   
+}
+@media screen and(max-width: 768px){
+    h3{
+        font-size: 20px;
+    }
+}
+@media screen and(min-width: 992px){
+    h3{
+        font-size: 22px;
+    }
+}
+
+
 
 body{
+
     margin: 0;
     background-color: var(--main-bg-color);
     padding-top: 1px;
-   
-}
+    width: 100%;
+}   
 
 body h1,h2,h3,h4,h5{
     font-family: var(--main-titre-fm);
@@ -79,9 +101,9 @@ body h4{
 }
 
 .woo{
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 30px;
-    margin-left: 40px;
+   text-align: center;
 }
 
 .dd{
@@ -90,8 +112,8 @@ body h4{
 
 #carouselExampleAutoplaying{
     /* height: 10em; */
-    width: 30vw;
-    margin-left: 30em;
+    width: 50%;
+    margin: 0 auto;
     border: 1px solid black;
     border-radius: 10px;
     padding: 4px;
@@ -99,8 +121,9 @@ body h4{
 }
 
 .carousel img{
-    width: 5vw;
-    margin-left: 170px;
+    margin: 0 auto;
+    width: 7vw;
+    /* margin-left: 170px;   */
     border: 2px solid  rgb(228, 125, 28) ;
     border-radius: 30px;
 }
@@ -111,14 +134,14 @@ span, h2{
 .ban{
     background-color: rgb(228, 125, 28) ;
     height: 40vh;
-   
+    width: 100%;
 }
 .ban h5{
     font-size: 29px;
-    margin-left: 400px;
+   text-align: center;
 }
 .ban p{
-    margin-left: 470px;
+   text-align: center;
     margin-top: 1em;
     font-size: 20px;
 }
@@ -131,14 +154,16 @@ span, h2{
    
 }
 .bta{
-    margin-left: 570px;
-    margin-top: 4em;
+    /* margin-left:150px; */
+    margin-top: 8px;
+   
 }
 
 footer{
     background-color: var(--footer-bg-color);
     color: aliceblue;
-   
+    padding: 10px;
+    width: 100%;
 
 }
 
@@ -212,45 +237,55 @@ footer{
     
 }
 .imgn{
-    margin-left: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .you{
     font-family: var(--main-p-fm);
     font-size: 30px;
     color: rgb(41, 42, 43);
-    margin-left: 410px;
-    margin-right: 410px;
-
+    text-align: center;
 }
 .yum{
-    margin-left: 400px;
+   text-align: center;
+}
+
+.cent{
+    text-align: center;
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr); 
     gap: 70px;
-    width: 900px;
+    width: 90%;
     border-radius: 60px;
     padding: 20px;
     margin: 0;
     align-items: start;
-    margin-left: 200px;
+    margin: 0 auto;
+}
+.grid{
+    border-radius: 15px;
+    padding: 20px;
 }
 .grid1{
-    height: 45vh;
+    /* height: 55vh; */
+    grid-column: span 2;
+    grid-row: span 2;
 }
 .grid2{
-    height: 55vh;
+    /* height: 65vh; */
+    grid-column: span 2;
 }
 .grid3{
-    height: 60vh;
+    /* height: 60vh; */
+    grid-column: span 1;
 }
-.grid p{
-    font-size: 20px;
-    line-height: 2;
-}
+
 .grid4{
-    height: 40vh;
+    /* height: 45vh; */
+    grid-column: span 3;
 }
