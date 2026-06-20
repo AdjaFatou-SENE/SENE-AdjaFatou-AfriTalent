@@ -12,9 +12,10 @@
     --main-titre-fm:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --main-p-fm: 'Times New Roman', Times, serif;
     --footer-bg-color: black;
+}
 
-
-   
+.container{
+    background-color: var(--secondory-color);
 }
 
 p svg{
@@ -49,6 +50,7 @@ body{
     background-color: var(--main-bg-color);
     padding-top: 1px;
     width: 100%;
+    
 }   
 
 body h1,h2,h3,h4,h5{
@@ -67,7 +69,9 @@ header{
     padding: 0;
     margin-top: 0;
     z-index: 7;
-
+}
+.navbar{
+     transition: all 0.3s ease-in-out;
 }
 .logo{
     width: 9vw;
@@ -76,6 +80,14 @@ header{
 section{
     /* margin-top: var(--main-section-margin-top); */
     height: var(--main-section-height);
+}
+#theme-toggle{
+    width: 40px;
+    cursor: pointer;
+    background-color: aliceblue;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .aa{
@@ -133,8 +145,9 @@ span, h2{
 
 .ban{
     background-color: rgb(228, 125, 28) ;
-    height: 40vh;
+    height: 20vhh;
     width: 100%;
+    
 }
 .ban h5{
     font-size: 29px;
@@ -150,13 +163,11 @@ span, h2{
     background-color:  rgb(209, 11, 11);
     color: black;
     font-size: 23px;
-   
-   
 }
+
 .bta{
-    /* margin-left:150px; */
-    margin-top: 8px;
-   
+    margin-top: 8px;   
+    position: center;
 }
 
 footer{
@@ -169,7 +180,7 @@ footer{
 
 .disp{
     display: flex;
-    gap: 155px;
+    gap: 90px;
     margin-bottom: 2em;
 }
 
@@ -227,8 +238,7 @@ footer{
 .dora{
     display: flex;
     gap: 50px;
-    margin-left: 350px;
-   
+    justify-content: center;
 }
 
 .dflex{
@@ -245,7 +255,7 @@ footer{
 .you{
     font-family: var(--main-p-fm);
     font-size: 30px;
-    color: rgb(41, 42, 43);
+    /* color: rgb(41, 42, 43); */
     text-align: center;
 }
 .yum{
@@ -254,38 +264,77 @@ footer{
 
 .cent{
     text-align: center;
+
+}
+.card{
+    border-radius: 5%;
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(2,1fr); 
     gap: 70px;
-    width: 90%;
-    border-radius: 60px;
+    width: 100%;
+    border-radius: 50%;
     padding: 20px;
     margin: 0;
     align-items: start;
     margin: 0 auto;
 }
 .grid{
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 20px;
 }
 .grid1{
-    /* height: 55vh; */
+    /* height: 50%; */
     grid-column: span 2;
     grid-row: span 2;
 }
 .grid2{
-    /* height: 65vh; */
+    /* height: 20%; */
     grid-column: span 2;
+    grid-row: span 1;
 }
 .grid3{
-    /* height: 60vh; */
+    /* height: 15%; */
     grid-column: span 1;
+    grid-row: span 2;
 }
 
 .grid4{
-    /* height: 45vh; */
-    grid-column: span 3;
+    /* height: 20%; */
+    grid-column: span 1;
+    grid-row: span 1;
+}
+/* le toggle */
+.dark-mode{
+    background-color: #121212;
+    color: white;
+    .carousel{
+        border: 1px solid var(--body-a-color);
+        border-radius: 10px;
+        padding: 4px;
+    }
+    .woo{
+        color: rgb(230, 193, 126);
+    }
+    .you{
+        color: rgb(230, 193, 126);
+    }
+    
+}
+
+/* SCROLL */
+.navbar-scroll {
+    background-color: white;
+    box-shadow: 0 2px 10px rgb(0,0,0,0.2);
+    padding: 5px 0;
+}
+#backtotop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    background-color: #121212;
+    color: white;
 }
