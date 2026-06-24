@@ -42,3 +42,38 @@ togglebtn.addEventListener("click", () => {
         behavior: "smooth"
     })
  })
+
+ //COMPTEURS STATISTIQUES
+
+ const counter = document.querySelectorAll(".counter");
+
+ counter.forEach(counter => {
+    const updatecounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const current = +counter.innerText;
+
+        const increment = target / 100;
+
+        if (current <target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updatecounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    }
+    updatecounter()
+});
+
+//FADE-IN
+
+const section = document.querySelectorAll(".fade-in");
+const observer = new IntersectionObserver(entries => {
+    entries .forEach(entry =>{
+        if (entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+section.forEach(section =>{
+    observer.observe(section);
+})

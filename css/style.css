@@ -61,6 +61,17 @@ body p{
     font-family: var(--main-p-fm);
     font-size: 18px;
 }
+.pp p{
+    font-size: 25px;
+}
+
+.counter{
+    color: var(--main-h3-color);
+    font-size: 40px;
+    p{
+        font-size: 40px;
+    }
+}
 
 header{
     width: 100%;
@@ -223,12 +234,13 @@ footer{
 }
 
 .card2{
-   height: 400px;
+   height: 500px;
     width: 100%;
     object-fit: cover;
     object-position: top;
     padding: 3px;
 }
+
 
 .ouba{
     display: flex;
@@ -240,7 +252,10 @@ footer{
     gap: 50px;
     justify-content: center;
 }
-
+.dora h5{
+    font-size: 30px;
+    margin-top: 0;
+}
 .dflex{
     display: flex;
     gap: 40px;
@@ -337,4 +352,14 @@ footer{
     display: block;
     background-color: #121212;
     color: white;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
 }
