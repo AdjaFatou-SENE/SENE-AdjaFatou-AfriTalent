@@ -59,10 +59,16 @@
         <div class="dop">
             <div>    
                 <h3>Formulaires de Contact</h3>
-                <form class="iop">
-                    <p><input type="text" name="Nom" placeholder="votre Nom "></p>
-                    <p><input type="text" name="Prenom" placeholder="votre Prenom"></p>
-                    <p><input type="text" name="Email" placeholder="votre Adresse Email"></p>
+                <form id="contactForm" class="iop">
+                    <p><input type="text" name="Nom" id="name" placeholder="votre Nom "></p>
+                    <small id="nameError" class="error"></small>
+
+                    <p><input type="text" name="Prenom" id="prenom" placeholder="votre Prenom"></p>
+                    <small id="prenomError" class="error"></small>
+
+                    <p><input type="text" name="Email" id="email" placeholder="votre Adresse Email"></p>
+                    <small id="emailError" class="error"></small>
+
                     <p><select name="Sujet">
                         <option value="">Choisissez un sujet...</option>
                         <option value="">Partenariat / collaboration</option>
@@ -71,9 +77,12 @@
                         <option value="">Signaler un bug technique</option>
                         <option value="">Probleme avec mon compte</option>
                     </select></p>
-                    <p><textarea name="message" placeholder="Votre Message" required></textarea></p>
+                    <p><textarea name="message" id="message" placeholder="Votre Message" ></textarea></p>
+                    <small id="messageError" class="error"></small>
+
                     <button type="submit">Envoyer</button>
                 </form>
+                <p id="successMessage"></p>
             </div>
             <div>
 

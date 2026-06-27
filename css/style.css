@@ -363,3 +363,13 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+.error{
+    color: #ff3333;
+    display: block;
+    font-size: 14px;
+    /* margin-top: 5px; */
+}
+#succesMessage{
+    color: green;
+    
+}

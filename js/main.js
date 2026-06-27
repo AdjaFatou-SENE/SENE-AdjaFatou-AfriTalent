@@ -77,3 +77,105 @@ const observer = new IntersectionObserver(entries => {
 section.forEach(section =>{
     observer.observe(section);
 })
+
+const select = document.getElementById("free");
+const cards = document.querySelectorAll(".cards");
+
+if (select) {
+    select.addEventListener("change", (event) => {
+        const selectionCategory = event.target.value.toLowerCase();
+
+        cards.forEach(card => {
+            const cardcategory = card.getAttribute("data-category")
+            .toLowerCase();
+            if (
+                selectionCategory === "all" ||
+                cardcategory === selectionCategory)
+                {
+            card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        
+        }); 
+    });
+}
+
+
+
+const form = document.getElementById("contactForm");
+
+const name = document.getElementById("name");
+const prenom = document.getElementById("prenom");
+
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    // alert("Le bouton envoyer fonctionne");
+
+    document.querySelectorAll(".error").forEach(el => el.textContent = "");
+        if (successMessage) {
+    successMessage.classList.add("d-none");
+        }
+
+    let valid = true;
+    const nameValue =name ? name.value.trim() : "";
+    const prenomValue =prenom ? prenom.value.trim() : "";
+    const emailValue =email ? email.value.trim() : "";
+    const messageValue =message ? message.value.trim(): "";
+
+    if (nameValue === ""){
+        document.getElementById("nameError").textContent = "Le nom est obligatoire.";
+            valid = false;
+    }
+    if(prenomValue ===""){
+        document.getElementById("prenomError").textContent = "Le prenom est obligatoire.";
+            valid = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailValue === ""){
+        document.getElementById("emailError"). textContent= "L'adresse email est obligatoir.";
+            valid = false;
+    } else if (! emailRegex.test(emailValue)){
+        document.getElementById("emailError").textContent = " Veuillez entrer un mail valide.";
+            valid = false;
+    }
+    if (messageValue ===""){
+        document.getElementById("messageError").textContent= "Le message est requis.";
+            valid = false;
+    } else if (messageValue.length < 20) {
+        document.getElementById("messageError").textContent = "Le message doit contenir au moins 20 caracteres.";
+            valid = false;
+    } if (valid){
+        if (successMessage) {
+        successMessage.classList.remove("d-none");
+        }
+            this.reset();
+    }
+});
+
+
+
+
+// form.addEventListener("submit", function(e) {
+//     e.preventDefault();
+
+//     document.querySelectorAll(".error").forEach(error => error.textContent="");
+
+//     let valid = true;
+
+    
+//     document.getElementById("successMessage").textContent = "";
+
+//     const name = document.getElementById("name").value.trim();
+//     const email = document.getElementById("email").value.trim();
+//     const message = document.getElementById("message").value.trim();
+
+//     if(name === "") {
+//         document.getElementById("nameError").textContent = "C'est obligatoire. "
+//     }
+// })
