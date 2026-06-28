@@ -17,7 +17,7 @@
         <!-- HEADER / NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="Images/logoAFRI.png" class="logo" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img src="Images/logoAFRI.png" class="logo" alt="logo AfriTalent"></a>
                 <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navMenu"
@@ -41,12 +41,12 @@
                 </div>
 
                 <div>  
-                    <button class="btn  text-decoration-none py-2" href="contact.html">Rejoindre AfriTalent</button>
+                    <a class="btn  text-decoration-none py-2" href="contact.html">Rejoindre AfriTalent</a>
                 </div>
 
                 <div>
                     <button id="theme-toggle">
-                        <img id="theme-icon" src="Images/moon-fill (1).svg" alt="">
+                        <img id="theme-icon" src="Images/moon-fill.svg" alt="changement theme">
                     </button>
                 </div>
             </div>
@@ -56,6 +56,8 @@
 
 
     <section class="fade-in"> 
+<!-- FORMULAIRE DE CONTACT -->
+
         <div class="dop">
             <div>    
                 <h3>Formulaires de Contact</h3>
@@ -70,12 +72,12 @@
                     <small id="emailError" class="error"></small>
 
                     <p><select name="Sujet">
-                        <option value="">Choisissez un sujet...</option>
-                        <option value="">Partenariat / collaboration</option>
-                        <option value="">Abonnements</option>
-                        <option value="">Questions sur les offres</option>
-                        <option value="">Signaler un bug technique</option>
-                        <option value="">Probleme avec mon compte</option>
+                        <option value="choix">Choisissez un sujet...</option>
+                        <option value="Partenariat">Partenariat / collaboration</option>
+                        <option value="Abonnements">Abonnements</option>
+                        <option value="offre">Questions sur les offres</option>
+                        <option value="bug">Signaler un bug technique</option>
+                        <option value="Probleme">Probleme avec mon compte</option>
                     </select></p>
                     <p><textarea name="message" id="message" placeholder="Votre Message" ></textarea></p>
                     <small id="messageError" class="error"></small>
@@ -85,14 +87,16 @@
                 <p id="successMessage"></p>
             </div>
             <div>
-
-                <h3>Information de Contact</h3>
+<!-- INFORMATIONS DE CONTACT -->
+                <h3>Informations de Contact</h3>
                 <a href="email">AfriTalent00@gmail.com</a>
                 <p>Telephone : 33 830 29 29</p>
                 <p>Siege : Point E</p>
             </div>
         </div>
     </section>
+
+    <!-- CARTE GOOGLE MAPS INTEGREE -->
 
     <section class="mt-3 fade-in">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15437.088592892615!2d-17.47123061575879!3d14.69719577855654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172922e1f283f%3A0x26f341f60ba73d26!2sPoint%20E%2C%20Dakar!5e0!3m2!1sfr!2ssn!4v1774801576178!5m2!1sfr!2ssn"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

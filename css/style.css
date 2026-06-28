@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
 }
+
+/* LES VARIABLES */
 :root{
     --main-bg-color: rgb(228, 211, 179);
     --main-h3-color: rgb(133, 100, 12);
@@ -14,15 +16,15 @@
     --footer-bg-color: black;
 }
 
-.container{
-    background-color: var(--secondory-color);
-}
+/* LES ETOILES */
 
 p svg{
     color: rgb(236, 184, 41);
 }
 
-@media screen and(max-width: 375px){
+/* LA RESPONSIVITE */
+
+@media screen and (max-width: 375px){
     h3{
         font-size: 18px;
     }
@@ -31,18 +33,18 @@ p svg{
     }
    
 }
-@media screen and(max-width: 768px){
+@media screen and (max-width: 768px){
     h3{
         font-size: 20px;
     }
 }
-@media screen and(min-width: 992px){
+@media screen and (min-width: 1200px){
     h3{
         font-size: 22px;
     }
 }
 
-
+/* LE BODY */
 
 body{
 
@@ -50,28 +52,37 @@ body{
     background-color: var(--main-bg-color);
     padding-top: 1px;
     width: 100%;
-    
 }   
+
+/* MEME POLICE POUR TOUS LES TITRES */
 
 body h1,h2,h3,h4,h5{
     font-family: var(--main-titre-fm);
 }
 
+/* MEME POLICE ET TAILLE POUR LES P  */
+
 body p{
     font-family: var(--main-p-fm);
     font-size: 18px;
 }
+
+/* POUR GERER LA TAILLE DES P QUI SE TROUVE SOUS LE COMPTEUR */
 .pp p{
     font-size: 25px;
 }
 
+/* LA TAILLE ET LA COULEUR DES COMPTEURS */
+
 .counter{
     color: var(--main-h3-color);
     font-size: 40px;
-    p{
+}
+.counter p{
         font-size: 40px;
     }
-}
+
+    /* LE NAVBAR */
 
 header{
     width: 100%;
@@ -81,17 +92,27 @@ header{
     margin-top: 0;
     z-index: 7;
 }
+
+/* CHANGEMENT DE STYLE AU SCROLL */
 .navbar{
-     transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out; 
+     /* ANIME TOUS LES CHANGEMENTS DE STYLE EN 0.3S, AVEC UN DEMARRAGE ET UNE FIN EN DOUCEUR  */
 }
+
+/* POUR GERE LA TAILLE DU LOGO AFRITALENT */
+
 .logo{
     width: 9vw;
 }
+
+/* APPLIQUER LA MEME HAUTEUR A TOUTES LES SECTIONS */
 
 section{
     /* margin-top: var(--main-section-margin-top); */
     height: var(--main-section-height);
 }
+
+/* LA GESTION DU TOGGLE DARK MODE LIGHT MODE  */
 #theme-toggle{
     width: 40px;
     cursor: pointer;
@@ -101,27 +122,43 @@ section{
     border-radius: 50%;
 }
 
+/* la couleur de "rejoindre afritalent" */
+
 .aa{
     color: black;
 }
+
+/* pour donner a toutes les a du html la meme couleurs */
+
 body a{
     color: var(--body-a-color);
 
 }
+
+/* pour donner a toutes les h3 du html la meme couleur et de l'espace en haut et en bas */
+
 body h3{
     color: var(--main-h3-color);
     margin-bottom: 2em;
     margin-top: 5em;
     
 }
+
+/* pour donner un effet survol et une legere ombre a la section categories  */
+
 .cs:hover{
     transform: translateY(10px);
     box-shadow: 0 10px 20px rgb(87, 83, 83);
 }
 
+/* pour donner la meme couleur a toues les h4 du html */
+
 body h4{
-    color: var(--main-h4-color);
+    color: #121212;
+    text-align: center;
 }
+
+/* la position du h1 de la section hero */
 
 .woo{
     margin-top: 150px;
@@ -129,9 +166,13 @@ body h4{
    text-align: center;
 }
 
+/* espace du haut pour la sections notre histoire */
+
 .dd{
     margin-top: 200px;
 }
+
+/* pour gerer la taille carousel par rapports a la largeur  */
 
 #carouselExampleAutoplaying{
     /* height: 10em; */
@@ -143,6 +184,8 @@ body h4{
     margin-bottom: 5em;
 }
 
+/* pour gerer les images de chaque carte dans temmoignage */
+
 .carousel img{
     margin: 0 auto;
     width: 7vw;
@@ -150,25 +193,36 @@ body h4{
     border: 2px solid  rgb(228, 125, 28) ;
     border-radius: 30px;
 }
+
+/* pour gere les h2 qui se trouve span */
+
 span, h2{
     font-size: 25px;
 }
 
+/* pour gerer le bandeau avant le footer */
+
 .ban{
     background-color: rgb(228, 125, 28) ;
-    height: 20vhh;
+    height: 25vh;
     width: 100%;
     
 }
+
+/* H5 du bandeau */
 .ban h5{
     font-size: 29px;
    text-align: center;
 }
+
+/* p du bandeau */
 .ban p{
    text-align: center;
     margin-top: 1em;
     font-size: 20px;
 }
+
+/* pour gerer tous les boutons du code html */
 
 .btn{
     background-color:  rgb(209, 11, 11);
@@ -176,10 +230,14 @@ span, h2{
     font-size: 23px;
 }
 
+/* pour la getion unique du bouton prescription */
+
 .bta{
     margin-top: 8px;   
     position: center;
 }
+
+/* gere le footer */
 
 footer{
     background-color: var(--footer-bg-color);
@@ -189,11 +247,15 @@ footer{
 
 }
 
+/* pour le gestion globale des div du footer */
+
 .disp{
     display: flex;
     gap: 90px;
     margin-bottom: 2em;
 }
+
+/* pour gerer le bouton de filtrage*/
 
 #free{
     width: 20vh;
@@ -202,6 +264,8 @@ footer{
     margin-left: 38em;
 }
 
+/* pour gerer tous les images du code html */
+
 .img{
     height: 350px;
     width: 100%;
@@ -209,10 +273,14 @@ footer{
     object-position: top;
 }
 
+/* pour le h3 des tarifs */
+
 .tata{
     margin-top: 200px;
 }
 
+
+/* pour gerer les div du formulaires */
 .dop{
     margin-top: 100px;
     display: flex;
@@ -220,18 +288,28 @@ footer{
     width: 100%;
     font-size: 15px;
 }
-.iop input,select,textarea{
+
+/* les champs du formulaires de contact */
+
+.iop input, .iop select, .iop textarea{
     width: 40vw;
     height: 10vh;
     border-radius: 10px;
 }
 
-.oa div,p,a{
+/* les liens du footer */
+
+.oa div,.oa p, .oa a{
     text-decoration: none;
 }
+
+/* la largeur du accodion du footer */
+ 
 .oui{
     width: 60vw;
 }
+
+/* les cartes */
 
 .card2{
    height: 500px;
@@ -241,12 +319,16 @@ footer{
     padding: 3px;
 }
 
+/* nos valeurs */
 
 .ouba{
     display: flex;
     gap: 50px;
     margin-top: 3em;
 }
+
+/* pour gerer l'emplacement du compteurs dans a propos */
+
 .dora{
     display: flex;
     gap: 50px;
@@ -256,16 +338,24 @@ footer{
     font-size: 30px;
     margin-top: 0;
 }
+
+/* 1er sections de a propos */
+
 .dflex{
     display: flex;
     gap: 40px;
     
 }
+
+/* image du hero */
+
 .imgn{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* h2 section hero */
 
 .you{
     font-family: var(--main-p-fm);
@@ -273,17 +363,26 @@ footer{
     /* color: rgb(41, 42, 43); */
     text-align: center;
 }
+
+/* les 2 boutons cta du section hero */
+
 .yum{
    text-align: center;
 }
+
 
 .cent{
     text-align: center;
 
 }
+
+/* gerer les cartes */
+
 .card{
     border-radius: 5%;
 }
+
+/* Style Bento grid*/
 
 .grid{
     display: grid;
@@ -321,23 +420,24 @@ footer{
     grid-column: span 1;
     grid-row: span 1;
 }
-/* le toggle */
+/* /* le bouton dark/light mode */ 
 .dark-mode{
     background-color: #121212;
     color: white;
-    .carousel{
+    
+}
+.dark-mode .carousel{
         border: 1px solid var(--body-a-color);
         border-radius: 10px;
         padding: 4px;
     }
-    .woo{
-        color: rgb(230, 193, 126);
-    }
-    .you{
-        color: rgb(230, 193, 126);
-    }
-    
+
+.mmm{
+    height: 95vh;
 }
+.dark-mode .woo, .dark-mode .you{
+        color: rgb(230, 193, 126);
+    }
 
 /* SCROLL */
 .navbar-scroll {
@@ -345,6 +445,9 @@ footer{
     box-shadow: 0 2px 10px rgb(0,0,0,0.2);
     padding: 5px 0;
 }
+
+/* le bouton back to top pour un retour en haut de la page  */
+
 #backtotop{
     position: fixed;
     bottom: 20px;
@@ -353,6 +456,8 @@ footer{
     background-color: #121212;
     color: white;
 }
+
+/* les sections qui apparaissent en fondues */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -363,13 +468,19 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* signaler un erreur si les champs sont vide */
+
 .error{
     color: #ff3333;
     display: block;
     font-size: 14px;
     /* margin-top: 5px; */
 }
-#succesMessage{
+
+/* message enoyer avec succes dans le formulaires */
+
+#successMessage{
     color: green;
-    
+
 }
